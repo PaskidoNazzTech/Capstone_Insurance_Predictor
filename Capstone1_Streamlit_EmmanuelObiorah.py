@@ -28,17 +28,30 @@ with col2:
 
 # 🎯 Predict
 if st.button("Predict Premium"):
-    input_data = pd.DataFrame({
-        'Age': [age],
-        'Annual Income': [income],
-        'Health Score': [health],
-        'Credit Score': [credit],
-        'Number of Dependents': [dependents],
-        'Policy Age': [policy_age],
-        'Vehicle Age': [vehicle_age],
-        'Insurance Duration': [insurance_duration],
-        'Previous Claims': [previous_claims]
-    })
+       # Ensure correct order and column names
+    expected_cols = [
+        'Age', 'Annual Income', 'Health Score', 'Credit Score', 'Number of Dependents',
+        'Policy Age', 'Vehicle Age', 'Insurance Duration', 'Previous Claims'
+    ]
 
-    prediction = model.predict(input_data)
-    st.success(f"💰 Estimated Premium: ₦{prediction[0]:,.2f}")
+    input_data = pd.DataFrame([[
+        age,
+        income,
+        health,
+        credit,
+        dependents,
+        policy_age,
+        vehicle_age,
+        insurance_duration,
+        previous_claims
+    ]], columns=expected_cols)
+
+    # Optional debug: see what data is being fed to the model
+    st.write("🔍 Input Data:", input_data)
+
+    # Safety check for NaNs or invalid values
+    if input_data.isnull().values.any():
+        st.error("⚠️ One or more input values are missing or invalid. Please review your inputs.")
+    else:
+        prediction = model.predict(input_data)
+        st.success(f"💰 Estimated Premium: ₦{prediction[0]:,.2f}")
