@@ -1,67 +1,70 @@
-# 🛡️ SecureLife Insurance Premium Estimator
+# 🔐 SecureLife Insurance Premium Estimator
 
-Welcome to the SecureLife Insurance Premium Predictor App!  
-This project allows SecureLife agents and customers to estimate insurance premiums based on personal lifestyle, financial, and policy information.
+Welcome to the **SecureLife Insurance Premium Predictor App**!
 
-[![Streamlit](https://img.shields.io/badge/built%20with-Streamlit-blue?logo=streamlit)](https://streamlit.io)  
-*Data-driven insights to protect what matters most.*
+This project helps SecureLife agents and customers estimate insurance premiums based on personal lifestyle, financial, and policy information — all through a machine learning-powered web app.
+
+> *Data-driven insights to protect what matters most.*
 
 ---
 
 ## 📸 App Preview
 
-![App Screenshot](./60429313-8945-4b30-8d34-0a31e1744054.png)
+![App Screenshot](https://user-images.githubusercontent.com/your-screenshot-link.png)
 
 ---
 
 ## 📌 Project Overview
 
-- **Project Title:** Predicting Insurance Premiums with Data-Driven Insights for SecureLife Insurance Co.
-- **Submitted by:** Emmanuel Obiorah
-- **Capstone Program:** 3MTT Data Science Cohort 3
+- **🎓 Project Title:** Predicting Insurance Premiums with Data-Driven Insights for SecureLife Insurance Co.  
+- **👤 Submitted by:** Emmanuel Obiorah  
+- **🏛️ Program:** 3MTT Data Science Cohort 3  
+- **📅 Timeline:** 7-week Capstone Project
+
+---
 
 ## 🎯 Objective
 
-To develop and deploy a machine learning model that predicts insurance premiums using a trained Random Forest Regressor, and deploy the solution with a user-friendly Streamlit web application.
+To develop and deploy a regression model that predicts customer insurance premiums using a trained **Random Forest Regressor**, and deploy it through an interactive **Streamlit web app**.
 
 ---
 
 ## 🧠 Features
 
-- Predict insurance premiums using:
-  - Age  
-  - Annual Income  
-  - Health Score  
-  - Credit Score  
-  - Number of Dependents  
-  - Policy Age  
-  - Vehicle Age  
-  - Insurance Duration  
-  - Number of Previous Claims
+This app predicts insurance premiums based on:
+- Age  
+- Annual Income  
+- Health Score  
+- Credit Score  
+- Number of Dependents  
+- Policy Age  
+- Vehicle Age  
+- Insurance Duration  
+- Number of Previous Claims
 
 ---
 
-## 📁 Project Structure
-Capstone_Insurance_Predictor/
-│
-├── Week1_EDA_EmmanuelObiorah.ipynb
-├── Week2_Cleaning_EmmanuelObiorah.ipynb
-├── Week3_FeatureEngineering_EmmanuelObiorah.ipynb
-├── Week4_ModelTraining_EmmanuelObiorah.ipynb
-├── Week5_ModelEvaluation_EmmanuelObiorah.ipynb
-├── Week6_Tuning_EmmanuelObiorah.ipynb
-├── Week7_Streamlit_EmmanuelObiorah.ipynb
-│
-├── Capstone1_Streamlit_EmmanuelObiorah.py
-├── best_rf_model.pkl
-├── encoded_insurance_data.csv
-├── requirements.txt
-├── README.md
+## 🛠️ Tech Stack
+
+| Category       | Tools Used                                  |
+|----------------|----------------------------------------------|
+| Programming    | Python, Jupyter, Streamlit                   |
+| Modeling       | Random Forest Regressor (scikit-learn)       |
+| Visualization  | Matplotlib, Seaborn                          |
+| Version Control| Git, GitHub                                  |
+| Deployment     | Streamlit Cloud                              |
+| Environments   | VSCode, Google Colab                         |
+
+---
+
+## 🧪 Project Structure
 
 
-## 🚀 How to Run the App
+---
 
-### 1. Clone or download the project folder
+## 🚀 How to Run the App Locally
 
-```bash
-cd "C:\Users\hp\OneDrive\Desktop\3MTT-projects\Capstone_Insurance_Predictor"
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/PaskidoNazzTech/Capstone_Insurance_Predictor.git
+   cd Capstone_Insurance_Predictor
